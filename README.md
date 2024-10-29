@@ -2,7 +2,7 @@
 
 Pick pizza you want, make order and track progress!
 
-[Live Demo](https://react-pizza-meiyrbek.vercel.app)
+[Live Demo](https://fast-react-pizza-meiyrbek.vercel.app)
 
 ## Features:
 
