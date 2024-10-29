@@ -1,11 +1,10 @@
-import { useSelector } from 'react-redux';
 import Button from '../../ui/Button';
 import { formatCurrency } from '../../utils/helpers';
 import { addItem, getCartQuantityById } from '../cart/cartSlice';
 import DeleteItem from '../cart/DeleteItem';
 import UpdateItemQuantity from '../cart/UpdateItemQuantity';
 import { PizzaType } from './Menu';
-import { useAppDispatch, useAppSelector } from 'store';
+import { useAppDispatch, useAppSelector } from '../../store';
 
 function MenuItem({ pizza }: { pizza: PizzaType }) {
   const dispatch = useAppDispatch();

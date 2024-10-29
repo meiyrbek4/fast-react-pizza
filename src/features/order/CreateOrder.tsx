@@ -10,7 +10,6 @@ import {
 import { createOrder } from '../../services/apiRestaurant';
 import Button from '../../ui/Button';
 import EmptyCart from '../cart/EmptyCart';
-import { useDispatch, useSelector } from 'react-redux';
 import store, { useAppDispatch, useAppSelector } from '../../store';
 import {
   CartType,
@@ -45,12 +44,12 @@ function CreateOrder() {
   const [withPriority, setWithPriority] = useState(false);
   const navigation = useNavigation();
   const isSubmitting = navigation.state === 'submitting';
-  const cart = useSelector(getCart);
+  const cart = useAppSelector(getCart);
 
   const formErrors = useActionData() as ErrorsData;
   const dispatch = useAppDispatch();
 
-  const totalCartPrice = useSelector(getTotalCartPrice);
+  const totalCartPrice = useAppSelector(getTotalCartPrice);
   const priorityPrice = withPriority ? totalCartPrice * 0.2 : 0;
 
   if (!cart.length) return <EmptyCart />;
