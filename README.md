@@ -41,10 +41,10 @@ To run the project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/react-quiz.git
+git clone https://github.com/meiyrbek4/fast-react-pizza.git
 
 # Navigate to the project folder
-cd react-quiz
+cd fast-react-pizza
 
 # Install dependencies
 npm install
